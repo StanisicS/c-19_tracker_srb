@@ -1,3 +1,5 @@
+import 'package:google_fonts/google_fonts.dart';
+
 import 'gmap.dart';
 import 'package:flutter/material.dart';
 import 'package:location/location.dart';
@@ -14,6 +16,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         primaryColor: Color(0xFF1D1E33),
+        primaryTextTheme: TextTheme(
+            body1: GoogleFonts.cabin(
+                textStyle: TextStyle(color: Color(0xFF8D8E98)))),
         scaffoldBackgroundColor: Color(0xFF0A0E21),
         canvasColor: Colors.transparent,
       ),
